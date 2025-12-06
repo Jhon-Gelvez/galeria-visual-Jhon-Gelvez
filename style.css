@@ -1,0 +1,140 @@
+/* estilos por defecto para todos elementos */
+* {
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* NAVEGACION */
+/* distribucion navegacion */
+nav {
+    display: flex;
+    background-color: transparent;
+}
+
+/* links */
+a {
+    display: block;
+    margin: 0 20px 0 20px;
+    text-decoration: none;
+    color: #222;
+    background-color: transparent;
+}
+/* header con distribucion horizontal */
+.contenedor-navegacion {
+    margin: auto;
+    width: 80dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, #121212 0%, #888 50%, #121212 100%);
+}
+
+/* CONTENIDO PRINCIPAL */
+/* distribucion del contenido principal */
+main {
+    margin: auto;
+    width: 80dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section {
+    background-color: transparent;
+}
+/* titulo principal */
+
+.contedor-h1{
+    background-image: url("assets/imagenes/Final_Yamcha.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 800px;
+    min-height: 300px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* con trasnparencia para visualizar el texto */
+h1 {
+    color: inherit;
+    padding: 10px;
+    margin: 6px;
+    text-shadow: #000000 2px 0 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
+    text-align: center;
+}
+
+/* contenido de la saga de Z  y super */
+.saga-z,
+.saga-super {
+    margin: auto;
+    width: 80dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* h2 de la seccion sobre Dragon Ball Z */
+.saga-z-h2,
+.saga-super-h2 {
+    font-size: 1.9rem;
+    text-shadow: #fff 2px 0 4px;
+    background-color: transparent;
+}
+/* contenedor de las tarjetas */
+article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* imagenes dentro de article */
+article > img {
+    background-color: transparent;
+    margin: auto;
+    width: 100%;
+    max-width: 200px;
+    max-height: 400px;
+}
+
+/* titulo de cada personaje */
+h2 {
+    margin: 12px;
+    background-color: transparent;
+}
+/* espacio interno para los parrafos */
+p {
+    padding: 12px;
+    background-color: transparent;
+}
+
+/* ESTILOS UNICOS */
+#contenedor-goku,
+#contenedor-vegeta {
+    background: radial-gradient(circle, #666 0%, #333 30%, #121212 70%);
+}
+#p-goku, #p-vegeta, #p-zeno, #p-grand-priest {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#contenedor-zeno,
+#contenedor-grand-priest {
+    /*
+Source - https://stackoverflow.com/q
+Posted by étale-cohomology, modified by community. See post 'Timeline' for change history
+Retrieved 2025-12-06, License - CC BY-SA 4.0
+*/
+
+    background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%), radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%), radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%), radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%), radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+    background-blend-mode: screen;
+}

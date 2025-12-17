@@ -48,7 +48,7 @@ section {
 }
 /* titulo principal */
 
-.contedor-h1{
+.contedor-h1 {
     background-image: url("assets/imagenes/Final_Yamcha.webp");
     background-repeat: no-repeat;
     background-position: center;
@@ -123,7 +123,10 @@ p {
 #contenedor-vegeta {
     background: radial-gradient(circle, #666 0%, #333 30%, #121212 70%);
 }
-#p-goku, #p-vegeta, #p-zeno, #p-grand-priest {
+#p-goku,
+#p-vegeta,
+#p-zeno,
+#p-grand-priest {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -137,4 +140,24 @@ Retrieved 2025-12-06, License - CC BY-SA 4.0
 
     background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%), radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%), radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%), radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%), radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
     background-blend-mode: screen;
+}
+/* QUERIES */
+
+@media screen and (min-width: 900px) {
+    /* container */
+    section.saga-z, section.saga-super {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: fit-content auto;
+        align-items: end;
+        /* gap: 20px; */
+    }
+    section.saga-z .saga-z-h2,section.saga-super .saga-super-h2 {
+        /* ocupa toda la fila de arriba */
+        grid-column: span 3;
+        text-align: center;
+    }
+    section > article {
+        max-width: 40dvw;
+    }
 }
